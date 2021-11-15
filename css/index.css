@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto:wght@300&family=Rubik:wght@300&family=Yuji+Mai&display=swap');
+
+:root{
+    --theme: #f7d077;
+    --theme2: #cca752;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'PT Sans', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+    --animate-duration: 2.5s;
+    /* --animate-delay: 0.9s; */
+}
+
+body::before{
+    content: "";
+    background-image: url("https://wallpaper.dog/large/10701935.jpg");
+    /* background-image: url("/pic/bg.jpg"); */
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    filter: brightness(60%)
+}
+
+nav{
+    background: transparent;
+}
+
+nav ul{
+    display: flex
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover{
+    /* background: rgba(175, 175, 175, 0.418); */
+    color: var(--theme)
+}
+
+#orgName{
+  font-weight: bold;
+}
+
+#intro{
+    color: white;
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+#intro h1{
+    padding: 20px 0px;
+    font-size: 35px;
+}
+
+#intro h3{
+    padding: 20px 0px;
+    font-size: 30px;
+}
+
+/* dropdown css    */
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(46, 43, 43)}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    /* background: rgba(175, 175, 175, 0.418); */
+    color: var(--theme);
+  }
+
+/* dropdown css close */
+
+.btn{
+    font-size: 17px;
+    padding: 10px 30px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin: 10px 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn:hover{
+    transition: 0.3s;
+    background: var(--theme2);
+    border: 2px solid var(--theme2)
+}
+
+/* --------- art ------------ */
+#art{
+  /* border: 2px solid red; */
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column
+}
+
+#art h1{
+  font-size: 22px;
+  padding: 20px 0
+}
+
+#art p{
+  padding: 10px 160px;
+  text-align: center;
+  color: grey;
+  font-size: 15px;
+}
+
+#types{
+  /* border: 2px solid green; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  justify-content: center;
+}
+
+#types a{
+  /* border: 2px solid orange; */
+  padding: 50px;
+  margin: 5px 15px;
+  text-decoration: none;
+  color: white;
+  width: 250px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+}
+
+#abstract{
+  background-image: url("https://images.mojarto.com/photos/289982/full/colorful_figurative_woman_Abstract_painting.jpg?1605639892");
+  background-size: cover;
+  background-position: center;
+}
+
+#potrait{
+  background-image: url("https://i.pinimg.com/originals/fa/9d/0a/fa9d0a5f13dc14ae7eebdc0aeeb4919f.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#illustrated{
+  background-image: url("https://rukminim1.flixcart.com/image/416/416/j1nvwcw0/poster/x/v/a/medium-pkp2436-linkin-park-music-band-members-illustration-original-imaerygrfmcpkyy4.jpeg?q=70");
+  background-size: cover;
+  background-position: center center;
+}
+/* --------- art end ------------ */
+
+/* -------- new ---------- */
+#new{
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#new h1{
+  font-size: 22px;
+  padding: 20px 0
+}
+
+#paintings{
+  /* border: 2px solid orange; */
+  display:flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 10px 0px;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.box{
+  /* border: 2px solid blue; */
+  height: 410px;
+  width: 25%;
+  text-decoration: none;
+  display: flex;
+  color: black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 5px;
+}
+
+.box img{
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 300px;
+  top: 0;
+  display: block;
+}
+
+.info{
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  top: 0;
+}
+
+.box:hover{
+  transition:0.3s;
+  transform: scale(1.1);
+  color: var(--theme2)
+}
+
+.info p{
+  color: var(--theme2)
+}
+
+.info h1{
+  font-size: 25px;
+  padding:0;
+  margin: -10px;
+}
+
+.info h3{
+  color: grey;
+  font-size: 18px;
+  padding: 10px;
+  margin: -10px
+}
+/* -------- new end ---------- */
+
+#types a:hover{
+  transition: 0.4s ease;
+  background: var(--theme2);
+  background-image: none;
+}
+
+hr{
+  color: grey;
+  height: 1.3px;
+}
+
+/* --- blog section ----- */
+#blogSection::before{
+  content: "";
+  background-image: url("https://images.wallpaperscraft.com/image/single/surface_stains_paint_background_65781_1920x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  filter: brightness(50%);
+  width:100%;
+  height: 50%;
+  z-index: -1;
+  left: 0;
+}
+
+#blogSection{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#blog{
+  padding: 30px;
+  /* border: 2px solid yellow; */
+  color: white;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+#blog h1{
+  font-size: 30px;
+}
+
+#blog p{
+  text-align: center;
+}
+
+/* --- blog section end ----- */
+
+/* -------social ------- */
+#social{
+  /* border: 2px solid red; */
+  /* padding: 20px 0px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 150px;
+  margin: 40px 0px;
+}
+
+#social h1{
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.container{
+  /* border: 2px solid yellow; */
+  /* padding: /0px; */
+  width:100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box2{
+      /* border: 2px solid green; */
+      height: 100px;
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+.box2 img{
+    height: 40px;
+    margin: 30px 0px;
+}
+
+.box2 a{
+  text-decoration: none;
+  color: black;
+  /* padding: 10px 0px; */
+  font-weight: bold;
+}
+
+.box2 a:hover{
+  color: var(--theme2)
+}
+/* -------social end ------- */
+
+/* ----- contact --- */
+#contact::before{
+  /* content: "";
+  background-image: url("https://wallpapermemory.com/uploads/442/painting-paint-wallpaper-hd-1080p-300766.jpg");
+  background-size: cover;
+  left:0;
+  display:block;
+  position:absolute;
+  z-index: -1;
+  height: 100%;
+  width:100%; */
+
+  content: "";
+  background-image: url("https://wallpapermemory.com/uploads/442/painting-paint-wallpaper-hd-1080p-300766.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  opacity: 0.3;
+  width:100%;
+  height: 100%;
+  z-index: -1;
+  left: 0;
+
+}
+
+#contact{
+  /* border: 2px solid red; */
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contactForm{
+  /* border: 2px solid red; */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  box-shadow: rgba(32, 32, 32, 0.603) 0px 3px 8px;
+  border-radius: 18px;
+  margin: 20px 0px;
+}
+
+#contactForm textarea{
+  resize: none;
+  resize:vertical;
+  padding: 5px;
+  background:transparent;
+  font-size: 16px;
+  color: rgb(71, 71, 71);
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(95, 95, 95, 0.527) 0px 0px 0px 2px;
+  border-radius: 5px;
+  margin: 5px 10px;
+}
+
+#contactForm input{
+  font-size: 16px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  color: rgb(71, 71, 71);
+  background:transparent;
+  box-shadow: rgba(255, 255, 255, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 2px;
+  border-radius: 5px;
+  margin: 5px 10px;
+
+}
+
+#contactForm label{
+  font-weight: bold;
+  margin: 5px 10px;
+
+}
+
+#formIntro{
+  color: white;
+  background: rgb(41, 41, 41);
+  padding: 10px;
+  /* margin: 10px 0px; */
+  margin-bottom: 10px;
+  border-radius: 18px;
+}
+
+#formIntro h1{
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+#formIntro p{
+  font-size: 15px;
+}
+/* ---- contact end ----  */
+
+.btn2{
+  width: 120px;
+  padding: 8px;
+  background: dodgerblue;
+  border: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 30px;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.btn2:hover{
+  transition: 0.3s;
+  background: rgb(19, 95, 172);
+}
